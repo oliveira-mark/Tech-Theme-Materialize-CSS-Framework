@@ -1,0 +1,150 @@
+@import url(reset.css);
+@import url(tooltip.css);
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i");
+body {
+  font-family: 'PT Sans', sans-serif; }
+
+strong {
+  font-weight: 700; }
+
+nav {
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  line-height: 35px; }
+
+nav ul a {
+  font-size: 1.3rem;
+  letter-spacing: 0.05rem; }
+
+.container {
+  width: 100%; }
+
+.btn {
+  background-color: rgba(0, 0, 0, 0);
+  text-transform: none;
+  font-size: 1.2em;
+  box-shadow: none;
+  border-radius: 2rem;
+  line-height: 0;
+  font-weight: 700;
+  padding: 17px 35px 20px 35px; }
+  .btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    text-transform: none;
+    font-size: 1.2em;
+    box-shadow: none;
+    border-radius: 2rem; }
+
+.btn-color-theme {
+  border: 1.5px solid #09618b;
+  color: #09618b; }
+  .btn-color-theme:hover {
+    border: 1.5px solid #3d94bc;
+    color: #3d94bc; }
+
+.btn-color-white {
+  border: 1.5px solid white;
+  color: white; }
+
+.i-color-theme {
+  border: 1.5px solid #09618b;
+  border-radius: 50px;
+  color: #09618b;
+  font-size: 11px;
+  padding: 12.5px 12.5px 12.5px 14.5px;
+  margin: 0 5px 0 20px; }
+
+.hover-light {
+  padding-top: 50px; }
+  .hover-light span {
+    color: #09618b; }
+  .hover-light:hover span {
+    color: #3d94bc; }
+  .hover-light:hover .i-color-theme {
+    border: 1.5px solid #3d94bc;
+    color: #3d94bc; }
+
+#hero-home {
+  background-image: url("../images/bg/background-header-home.svg");
+  background-repeat: no-repeat;
+  background-position: 100% -200px;
+  background-size: 101%;
+  height: 100vh; }
+  #hero-home .brand-logo, #hero-home ul li a {
+    margin-top: 40px; }
+  #hero-home ul li a:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0); }
+  #hero-home .valign-wrapper {
+    width: 90%; }
+  #hero-home h1 {
+    font-size: 35px;
+    color: #09618b;
+    margin: 0; }
+    #hero-home h1 strong {
+      font-size: 45px; }
+  #hero-home .center img {
+    padding-top: 10%; }
+  #hero-home .social {
+    bottom: 25px;
+    left: 50px;
+    position: absolute; }
+    #hero-home .social ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden; }
+    #hero-home .social li {
+      float: left; }
+    #hero-home .social li a {
+      color: #09618b;
+      display: block;
+      font-size: 20px;
+      padding: 0 10px;
+      text-align: center;
+      text-decoration: none; }
+    #hero-home .social li a:hover {
+      color: #3d94bc; }
+
+p {
+  font-size: 10px; }
+
+section {
+  padding-top: 150px;
+  padding-bottom: 150px; }
+  section span {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #09618b; }
+  section h2 {
+    color: #09618b;
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 50px; }
+  section h3 {
+    color: #09618b;
+    font-size: 23px;
+    padding: 0; }
+  section p {
+    color: #696f71;
+    font-size: 15px;
+    line-height: 1.5rem;
+    padding-bottom: 30px; }
+
+.carousel .carousel-item > img {
+  width: 14%; }
+
+.carousel .indicators .indicator-item {
+  background-color: rgba(60, 147, 188, 0.5); }
+
+.carousel .indicators .indicator-item.active {
+  background-color: #3c93bc; }
+
+.carousel-item p {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=main.css.map */

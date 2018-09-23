@@ -1,0 +1,67 @@
+/* Relative positioning*/
+#image-map {
+    position: relative;
+}
+
+/* Hide the original tooltips contents */
+.pin {
+    display: none;
+}
+
+/* Begin styling the tooltips and pins */
+.tooltip-up, .tooltip-down {
+    position: absolute;
+    background: url(../images/content/btn-plus.png);    
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+}
+
+.tooltip {
+    display: none;
+    cursor: help;
+    position: absolute;
+    color: #fff;
+    top: 10px;
+    left: 50%;
+    z-index: 999;
+    margin-left: -58px;
+    padding: 15px;
+    border-radius: 50px;
+    background: rgba(0, 97, 142, 0.9); 
+    width: 115px;      
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+    border-bottom: 10px solid rgba(0, 97, 142, 0.9);;
+    border-left: 10px solid transparent;
+    border-right : 10px solid transparent;
+}
+
+.tooltip-down .tooltip {
+    bottom: 30px;
+    top: auto;
+}
+
+.tooltip-down .tooltip::after {
+    bottom: -10px;
+    top: auto;
+    border-bottom: 0;
+    border-top: 10px solid rgba(0, 97, 142, 0.9);
+}
+
+.tooltip h6{
+    margin: 0;
+    padding: 0;
+}
+
+.tooltip ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

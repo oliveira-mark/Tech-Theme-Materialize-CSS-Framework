@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+@import "reset.css";
+
+@import "tooltip.css";
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+
+// Inserting Variables
+
+$color-theme: #09618b;
+$color-theme-light: #3d94bc;
+
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+strong{
+    font-weight: 700;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    line-height: 35px;  
+}
+
+nav ul a {
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem;
+}
+
+.container {
+    width: 100%;
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0);
+    text-transform: none;
+    font-size: 1.2em;
+    box-shadow: none;
+    border-radius: 2rem;
+    line-height: 0;
+    font-weight: 700;
+    padding: 17px 35px 20px 35px;
+
+    &:hover {
+    background-color: rgba(0, 0, 0, 0);
+    text-transform: none;
+    font-size: 1.2em;
+    box-shadow: none;
+    border-radius: 2rem;
+}
+}
+
+.btn-color-theme {    
+    border: 1.5px solid $color-theme;
+    color: $color-theme;
+    &:hover{
+    border: 1.5px solid $color-theme-light;
+    color: $color-theme-light; 
+}
+}
+
+.btn-color-white {
+    border: 1.5px solid white;
+    color: white;
+}
+
+.i-color-theme {
+    border: 1.5px solid $color-theme;
+    border-radius: 50px; 
+    color: $color-theme;
+    font-size: 11px;
+    padding: 12.5px 12.5px 12.5px 14.5px;
+    margin: 0 5px 0 20px;
+}
+
+.hover-light{
+    padding-top: 50px;
+    span{
+        color: $color-theme;
+    }
+    &:hover{
+    span{
+    color: $color-theme-light;
+    }
+    .i-color-theme{
+    border: 1.5px solid $color-theme-light;
+    color: $color-theme-light;
+    }
+}
+}
+
+#hero-home {
+    background-image: url("../images/bg/background-header-home.svg");
+    background-repeat: no-repeat;
+    background-position: 100% -200px;
+    background-size: 101%; 
+    height: 100vh;
+
+    .brand-logo, ul li a{
+        margin-top: 40px;
+    }
+
+    ul li a:hover{
+        color: #fff;
+        background-color: rgba(0,0,0,0);
+    }
+
+    .valign-wrapper {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 35px;
+        color: $color-theme;
+        margin: 0;
+        strong{
+            font-size: 45px;
+        }
+    }
+
+    .center img {
+        padding-top: 10%;
+    }
+
+    .social{
+        bottom: 25px;
+        left: 50px;        
+        position: absolute;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            color: $color-theme;
+            display: block;
+            font-size: 20px;            
+            padding: 0 10px;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            color: $color-theme-light;
+        }
+    }
+}
+
+
+
+p {
+    font-size: 10px;
+}
+
+section{
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    span{
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #09618b;
+    }
+
+    h2{
+        color: #09618b;
+        font-size: 35px;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 50px;
+    }
+
+    h3{
+        color: #09618b;
+        font-size: 23px;
+        padding: 0;
+    }
+
+    p{
+        color: #696f71;
+        font-size: 15px;
+        line-height: 1.5rem;
+        padding-bottom: 30px;
+    }
+}
+
+.carousel .carousel-item > img {
+    width: 14%;
+}
+
+.carousel .indicators .indicator-item {
+    background-color: rgba(60, 147, 188, .5);
+}
+.carousel .indicators .indicator-item.active {
+    background-color: rgba(60, 147, 188, 1);
+}
+.carousel-item p{
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
