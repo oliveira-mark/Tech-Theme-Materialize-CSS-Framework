@@ -322,7 +322,15 @@ footer{
         background-size: 150%;
 
         .row{
-            padding-top: 10%;
+            padding-top: 25%;
         }
+
+        .responsive-img{
+            display: none;
+        }
+    }
+
+    #promo .mail {
+        max-width: 300px;
     }
 }

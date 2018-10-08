@@ -221,6 +221,11 @@ footer {
     background-position: 80% -200px;
     background-size: 150%; }
     #hero-home .row {
-      padding-top: 10%; } }
+      padding-top: 25%; }
+    #hero-home .responsive-img {
+      display: none; }
+
+  #promo .mail {
+    max-width: 300px; } }
 
 /*# sourceMappingURL=main.css.map */
